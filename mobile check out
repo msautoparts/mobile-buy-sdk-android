@@ -1,0 +1,16 @@
+// Constants
+public static final String BUY_CLIENT_SHOP = "lkq-discount-parts.myshopify.com";
+public static final String BUY_CLIENT_API_KEY = "c22ac725d381efdc5fdca39fbe3fc1ac";
+public static final String BUY_CLIENT_CHANNEL = "26758469";
+// Replace BUY_CLIENT_APP_NAME with whatever you like. We suggest
+// using your applications bundle identifier
+public static final String BUY_CLIENT_APP_NAME = "COM.YOUR.APP.PACKAGE";
+
+// Easily access an instance of your Buy Client
+public static BuyClient newInstance() {
+  BuyClient client = BuyClientFactory.getBuyClient(BUY_CLIENT_SHOP,
+                                                   BUY_CLIENT_API_KEY,
+                                                   BUY_CLIENT_CHANNEL,
+                                                   BUY_CLIENT_APP_NAME);
+  return client;
+}
